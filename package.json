@@ -39,11 +39,11 @@
           "mac": "cmd+alt+d",
           "when": "editorTextFocus"
       }
-    ],
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/realsxb/shaozeyv-auto.git"
-    }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/realsxb/shaozeyv-auto.git"
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
