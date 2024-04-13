@@ -1,0 +1,64 @@
+{
+  "name": "shaozeyv-auto",
+  "displayName": "asdc",
+  "description": "shaozeyv-auto select debug configuration,myfirst原来能写中文啊，不装洋人了，我用gpt辅助我写的扩展，就是用来解决不能自动选择调试配置这个问题的",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.88.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "shaozeyv-auto.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "extension.startCDebug",
+        "title": "Start C Debug"
+      },
+      {
+        "command": "extension.startCppDebug",
+        "title": "Start C++ Debug"
+      }
+    ],
+    "keybindings": [
+      {
+          "command": "extension.startCDebug",
+          "key": "ctrl+alt+c",
+          "mac": "cmd+alt+c",
+          "when": "editorTextFocus"
+      },
+      {
+          "command": "extension.startCppDebug",
+          "key": "ctrl+alt+d",
+          "mac": "cmd+alt+d",
+          "when": "editorTextFocus"
+      }
+  ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.88.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.4.0",
+    "@typescript-eslint/parser": "^7.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.8",
+    "@vscode/test-electron": "^2.3.9"
+  }
+  
+}
