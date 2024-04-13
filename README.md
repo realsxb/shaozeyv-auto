@@ -1,5 +1,5 @@
 shaozeyv-auto readme
-
+正文见尾
 Debug Configuration Selector for VSCode
 
 Description
@@ -36,3 +36,13 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 over
 tnnd不让我用中文写readme是吧一写就给我报错？？
+
+注意本扩展目前1.0.0仅支持gcc和g++的切换
+用法如下
+安装vsix压缩包，方法如图
+![alt text](1713029967552.png)
+新建工作目录
+配置文件放到.vscode中（要改一下gcc，g++,gdb的路径）
+over
+此时
+ctrl+alt+c用gcc编译后调试，ctrl+alt+d用g++编译后调试（没有断点的情况下相当于直接运行）
