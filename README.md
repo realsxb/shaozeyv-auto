@@ -1,71 +1,37 @@
-# shaozeyv-auto README
+shaozeyv-auto readme
 
-This is the README for your extension "shaozeyv-auto". After writing up a brief description, we recommend including the following sections.
+Debug Configuration Selector for VSCode
 
-## Features
+Description
+This VSCode extension allows you to quickly select and activate debugging configurations directly from the keyboard, enhancing productivity by avoiding manual configuration selection through the debugging panel. It supports separate commands for launching C and C++ debug sessions, streamlining the development process for projects that involve frequent debugging.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+Features
+Quick Debug Activation: Activate C and C++ debugging configurations with predefined shortcuts.
+Easy Configuration: Simplify the process of starting a debug session by binding shortcuts to specific debug configurations.
 
-For example if there is an image subfolder under your extension project workspace:
+Installation
+From VSIX
+Download the .vsix file from the GitHub releases page.
+Open Visual Studio Code.
+Go to the Extensions view by clicking on the square icon on the sidebar or pressing Ctrl+Shift+X.
+Click on the ... at the top right of the Extensions view, choose Install from VSIX..., and select the downloaded file.
 
-\!\[feature X\]\(images/feature-x.png\)
+Usage
+After installation, you can use the following shortcuts to start debugging:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+Ctrl+Alt+C (or Cmd+Alt+C on macOS) to start a C debug session.
+Ctrl+Alt+D (or Cmd+Alt+D on macOS) to start a C++ debug session.
 
-## Requirements
+Ensure your launch.json is configured properly in your project to use these commands effectively.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Contributing
+Contributions are welcome! If you'd like to improve this extension, please fork the repository and submit a pull request.
 
-## Extension Settings
+Release Notes
+1.0.0
+easy complete the task
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+over
